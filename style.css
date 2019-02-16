@@ -246,21 +246,32 @@ color: grey;
   position: relative;
 }
 .it{
-  font-size: 40px;
+  font-size: 35px;
   font-family: 'Lato', sans-serif;
   text-align: center;
-  margin-top: 5vh;
+  margin-top: 3vh;
   cursor: pointer;
+  color: #dedede;
+}
+.itimage{
+  background-position: center;
+  background-image: url('assets/vs.png');
+  background-size: contain;
+  height: 27vh;
+  width: 27vh;
+  margin: auto;
+  margin-top: 15.5vh;
+  background-repeat: no-repeat;
 }
 .enclose{
-  margin-top: 35vh;
+  margin-top: 6vh;
 }
 .line4{
-  width: 90px;
+  width: 105px;
   height: 2px;
 }
 .list2{
-  margin-top: 10vh;
+  margin-top: 5vh;
 }
 .goto{
   font-size: 20px;
@@ -279,11 +290,10 @@ color: grey;
 }
 @media screen and (min-width:500px) {
   .menu{
-    width: 35vw;
-
+    width: 30vw;
   }
   .menu-active{
-    transform: translateX(-35vw);
+    transform: translateX(-30vw);
   }
   .bars-active{
     margin-left: 65vw;
