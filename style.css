@@ -274,3 +274,18 @@ color: grey;
   margin-top: 0;
   opacity: 1;
 }
+.bars{
+  transition: 300ms;
+}
+@media screen and (min-width:500px) {
+  .menu{
+    width: 35vw;
+
+  }
+  .menu-active{
+    transform: translateX(-35vw);
+  }
+  .bars-active{
+    margin-left: 65vw;
+  }
+}
