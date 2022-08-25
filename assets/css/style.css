@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Poppins:wght@400;600&display=swap");
+
+body {
+  background: #efefef;
+  /* background: #13171c; */
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  color: #13171c;
+  /* color: #efefef; */
+  font-family: "Lato";
+}
+
+::selection {
+  color: #dedede;
+  background-color: #13171c;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e1c;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #efefef;
+}
+
+a:active,
+a:visited,
+a:hover,
+a:link {
+  text-decoration: none;
+  color: #13171c;
+}
+
+nav {
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+}
+
+.landing h4 {
+  font-weight: 300;
+}
+
+.bg-dark {
+  background-color: #13171c;
+  color: #efefef;
+}
+
+.bg-light {
+  background-color: #efefef;
+  color: #13171c;
+}
+
+.buttons a {
+  border: 1px solid;
+  transition: 0.3s all ease-in-out;
+}
+
+.buttons .view-project {
+  background-color: #13171c;
+  color: #efefef;
+}
+
+.project .img img {
+  max-width: none;
+  width: 130%;
+}
+
+.align-items-center {
+  align-items: center;
+}
+.ml-reset {
+  margin-left: -40%;
+}
+/* .buttons .view-project:hover {
+  background-color: #efefef;
+  color: #13171c;
+}
+
+.buttons .view-source:hover {
+  background-color: #13171c;
+  color: #efefef;
+} */
