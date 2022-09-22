@@ -1,7 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Poppins:wght@400;600&display=swap");
 
+body,
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background: #efefef;
+  background: #fff;
   /* background: #13171c; */
   margin: 0;
   padding: 0;
@@ -53,7 +58,7 @@ nav ul {
 }
 
 .bg-light {
-  background-color: #efefef;
+  background-color: #fff;
   color: #13171c;
 }
 
@@ -91,6 +96,94 @@ nav ul {
 /* Canvas */
 
 #canvas {
-  position: absolute;
+  position: fixed;
   opacity: 0.3;
+  z-index: -2;
+}
+
+/* Projects */
+
+.cards {
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 40%;
+  margin-bottom: 5vh;
+}
+
+.card h4 {
+  margin-top: 15px;
+  font-size: 24px;
+}
+
+.card .card-img {
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-img img {
+  width: 20%;
+  /* margin: auto; */
+}
+
+.card .tabs {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.cards .tabs span {
+  /* background-color: #13171c;
+  color: #efefef; */
+  background-color: #fff;
+  color: #13171c;
+  border: 1px solid #13171c;
+  border-radius: 25px;
+  padding: 5px 15px;
+  font-size: 12px;
+}
+
+.contact-cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.contact-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact-card .info {
+  padding-left: 10px;
+}
+
+.contact-card img {
+  width: 60px;
+  height: 60px;
+}
+
+.share {
+  opacity: 0;
+  transition: 0.3s all ease-in-out;
+}
+
+.scrollIn {
+  opacity: 1;
+}
+
+@media screen and (max-width: 600px) {
+  .cards,
+  .contact-cards {
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 100%;
+  }
+  .contact-card {
+    width: 50%;
+  }
 }
