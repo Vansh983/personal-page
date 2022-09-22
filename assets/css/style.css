@@ -169,6 +169,8 @@ nav ul {
 .share {
   opacity: 0;
   transition: 0.3s all ease-in-out;
+  width: 15% !important;
+  height: max-content;
 }
 
 .scrollIn {
@@ -185,5 +187,8 @@ nav ul {
   }
   .contact-card {
     width: 50%;
+  }
+  .share {
+    opacity: 1;
   }
 }
