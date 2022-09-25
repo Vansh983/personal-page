@@ -5,15 +5,39 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Default colors */
 body {
-  background: #fff;
+  --text-color: #13171c;
+  --bkg-color: #fff;
+}
+/* Dark theme colors */
+body.dark-theme {
+  --text-color: #13171c;
+  --bkg-color: #fff;
+}
+
+/* Styles for users who prefer dark mode at the OS level */
+@media (prefers-color-scheme: dark) {
+  /* defaults to dark theme */
+  body {
+    --text-color: #13171c;
+    --bkg-color: #fff;
+  }
+  /* Override dark mode with light mode styles if the user decides to swap */
+  body.light-theme {
+    --text-color: #13171c;
+    --bkg-color: #fff;
+  }
+}
+
+body {
   /* background: #13171c; */
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  color: #13171c;
   /* color: #efefef; */
   font-family: "Lato";
+  background: var(--bkg-color);
 }
 
 ::selection {
@@ -52,14 +76,22 @@ nav ul {
   font-weight: 300;
 }
 
+h1,
+h2,
+h3,
+h4,
+p {
+  color: var(--text-color);
+}
+
 .bg-dark {
-  background-color: #13171c;
-  color: #efefef;
+  background: var(--bkg-color);
+  color: var(--text-color);
 }
 
 .bg-light {
-  background-color: #fff;
-  color: #13171c;
+  background: var(--bkg-color);
+  color: var(--text-color);
 }
 
 .buttons a {
