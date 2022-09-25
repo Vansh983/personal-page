@@ -177,6 +177,11 @@ nav ul {
   opacity: 1;
 }
 
+.main-text a {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
 @media screen and (max-width: 600px) {
   .cards,
   .contact-cards {
